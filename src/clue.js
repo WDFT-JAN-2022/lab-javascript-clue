@@ -132,7 +132,19 @@ function selectRandom(arr) {
   return arr[randomIndex];
 }
 
-function pickMystery() {}
+function pickMystery() {
+  const envelope = {
+    suspect: selectRandom(suspectsArray),
+    weapon: selectRandom(weaponsArray),
+    room: selectRandom(roomsArray)
+  };
+  return envelope;
+  // return {
+  //   suspect: selectRandom(suspectsArray),
+  //   weapon: selectRandom(weaponsArray),
+  //   room: selectRandom(roomsArray)
+  // };
+}
 
 // ITERATION 3
 
